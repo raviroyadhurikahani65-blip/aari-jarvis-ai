@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#18121E"/>
+  <circle cx="256" cy="256" r="180" fill="url(#glow)" opacity="0.25"/>
+  <path d="M166 220C166 164.772 206.294 120 256 120C305.706 120 346 164.772 346 220V290C346 334.183 305.706 370 256 370C206.294 370 166 334.183 166 290V220Z" fill="#FFE4DC"/>
+  <path d="M148 216C148 150 196 102 256 102C316 102 364 150 364 216C364 245 356 290 342 320C336 260 326 205 296 182C272 202 232 208 196 190C174 216 168 265 166 315C154 285 148 245 148 216Z" fill="#4A2C3A"/>
+  <ellipse cx="218" cy="246" rx="16" ry="20" fill="#2D1822"/>
+  <ellipse cx="294" cy="246" rx="16" ry="20" fill="#2D1822"/>
+  <circle cx="213" cy="239" r="6" fill="#FFFFFF"/>
+  <circle cx="289" cy="239" r="6" fill="#FFFFFF"/>
+  <ellipse cx="195" cy="272" rx="14" ry="7" fill="#FF8DA1" opacity="0.55"/>
+  <ellipse cx="317" cy="272" rx="14" ry="7" fill="#FF8DA1" opacity="0.55"/>
+  <path d="M236 292C244 304 268 304 276 292" stroke="#D9536F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M256 392C236 374 205 374 195 394C185 414 216 438 256 458C296 438 327 414 317 394C307 374 276 374 256 392Z" fill="#F43F5E"/>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(180)">
+      <stop stop-color="#F43F5E"/>
+      <stop offset="1" stop-color="#F43F5E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

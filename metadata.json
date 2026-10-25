@@ -1,0 +1,11 @@
+{
+  "name": "Aari — Anime AI Companion & Android Controller",
+  "description": "Your personal anime AI companion and voice-controlled Android Jarvis for calls, messages, app launching, device settings, and daily schedule management.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

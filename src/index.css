@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0F0D15;
+    color: #F5F2F4;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.018) translateY(-2px);
+  }
+}
+
+@keyframes laughBounce {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1.02);
+  }
+  25% {
+    transform: translateY(-6px) rotate(-1.5deg) scale(1.03);
+  }
+  50% {
+    transform: translateY(0px) rotate(1deg) scale(1.02);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-1deg) scale(1.03);
+  }
+}
+
+@keyframes cryQuiver {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-1.5px) translateY(1px) rotate(-0.8deg);
+  }
+  75% {
+    transform: translateX(1.5px) translateY(2px) rotate(0.8deg);
+  }
+}
+
+@keyframes tearFall {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.6);
+  }
+  20% {
+    opacity: 0.95;
+    transform: translateY(6px) scale(1);
+  }
+  80% {
+    opacity: 0.9;
+    transform: translateY(34px) scale(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(48px) scale(0.5);
+  }
+}
+
+@keyframes kissFly {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4) rotate(-10deg);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-35%, -90%) scale(1.15) rotate(8deg);
+  }
+  75% {
+    opacity: 0.95;
+    transform: translate(15%, -160%) scale(1.55) rotate(-6deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(40%, -210%) scale(1.9) rotate(12deg);
+  }
+}
+
+@keyframes heartRise {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.5);
+  }
+  30% {
+    opacity: 0.95;
+    transform: translateY(-10px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-85px) scale(1.35);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+.animate-breathe {
+  animation: breathe 3.6s ease-in-out infinite;
+}
+
+.animate-laugh-bounce {
+  animation: laughBounce 0.65s ease-in-out infinite;
+}
+
+.animate-cry-quiver {
+  animation: cryQuiver 0.45s ease-in-out infinite;
+}
+
+.animate-tear-1 {
+  animation: tearFall 1.5s ease-in infinite;
+}
+
+.animate-tear-2 {
+  animation: tearFall 1.5s ease-in 0.65s infinite;
+}
+
+.animate-kiss-fly {
+  animation: kissFly 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.animate-heart-rise-1 {
+  animation: heartRise 2.2s ease-out infinite;
+}
+
+.animate-heart-rise-2 {
+  animation: heartRise 2.4s ease-out 0.7s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-breathe,
+  .animate-laugh-bounce,
+  .animate-cry-quiver,
+  .animate-tear-1,
+  .animate-tear-2,
+  .animate-kiss-fly,
+  .animate-heart-rise-1,
+  .animate-heart-rise-2 {
+    animation: none;
+  }
+}
